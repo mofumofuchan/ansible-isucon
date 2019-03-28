@@ -30,6 +30,7 @@
     url: https://getcomposer.org/composer.phar
     dest: /home/isucon/local/php/bin/composer
     mode: 0755
+    validate_certs: no
   become_user: isucon
 
 - shell: PATH="/home/isucon/local/php/bin:$PATH" composer install
