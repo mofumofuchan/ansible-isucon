@@ -12,6 +12,8 @@
     - command: rm -rf /tmp/isucon5-qualify
       args:
         removes: /tmp/isucon5-qualify
+    - name: update_gem
+      shell: PATH=/home/isucon/.local/ruby/bin:$PATH gem update --system
     - name: bundler
       shell: PATH=/home/isucon/.local/ruby/bin:$PATH gem install bundler
     - name: ruby
